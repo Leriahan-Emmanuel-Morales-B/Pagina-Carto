@@ -1,0 +1,205 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 1rem;
+  }
+  
+  /* Encabezado */
+  .encabezado {
+    background: linear-gradient(135deg, #1a73e8, #4fc3f7);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .encabezado h1 {
+    font-size: 2.5rem;
+    animation: fadeDown 1s ease-out;
+  }
+  
+  .frase-impacto {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    animation: fadeUp 1s ease-out;
+    font-style: italic;
+    color: #007acc;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  @keyframes fadeDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Navegación */
+  .menu-principal {
+    background-color: #333;
+    text-align: center;
+  }
+  
+  .menu-principal ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-principal li {
+    margin: 0.5rem;
+  }
+  
+  .menu-principal a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .menu-principal a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Secciones */
+  .seccion {
+    padding: 2rem 0;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 0.3rem;
+  }
+  
+  .seccion p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Productos */
+  .producto {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .producto h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #222;
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .producto img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Descripción planta */
+  .descripcion-planta {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    border-left: 5px solid #1a73e8;
+    margin-top: 2rem;
+  }
+  
+  /* Contacto */
+  #contacto p {
+    margin: 0.5rem 0;
+  }
+  
+  #contacto a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  #contacto a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pie de página */
+  .pie {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu-principal ul {
+      flex-direction: column;
+    }
+  
+    .encabezado h1 {
+      font-size: 2rem;
+    }
+  
+    .producto {
+      margin-bottom: 1.5rem;
+    }
+  
+    .logo {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 0 0.5rem;
+    }
+  
+    .seccion h2 {
+      font-size: 1.5rem;
+    }
+  
+    .producto h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
